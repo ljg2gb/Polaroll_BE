@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   resources :users
   post "login", to: "authentication#login"
   get "profile", to: "users#profile"
