@@ -6,7 +6,7 @@ class ApplicationController < ActionController::API
         if authorization_header
             token = authorization_header.split(" ")[1]
             begin
-                secret = Rails.application.secrets.secret_key_base
+                secret = ENV["SECRET_KEY_BASE"] || Rails.application.secrets.secret_key_base
                 @user_id = JWT.decode(token, secret)[0]["user_id"]
                 @user = User.find(@user_id)
             rescue
@@ -19,7 +19,7 @@ class ApplicationController < ActionController::API
 
     def create_token(user)
         payload = { user_id: user.id }
-        secret = Rails.application.secrets.secret_key_base 
+        secret = ENV["SECRET_KEY_BASE"] || Rails.application.secrets.secret_key_base 
         JWT.encode(payload, secret)
     end
 end
