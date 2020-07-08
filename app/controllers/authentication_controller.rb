@@ -11,7 +11,7 @@ class AuthenticationController < ApplicationController
                     token: token,
                     user_id: @user.id,
                     user_name: @user.name,
-                    friends: @user.friends
+                    photos: @user.photos
                 }  
             else
                 render json: {message: "Invalid username or password"}, status: :unauthorized
