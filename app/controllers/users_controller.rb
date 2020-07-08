@@ -24,7 +24,8 @@ class UsersController < ApplicationController
             render json: {
                 token: token,
                 user_id: @user.id,
-                user_name: @user.name
+                user_name: @user.name,
+                photos: @user.photos
             }
         else
             render json: { message: @user.errors.messages }
