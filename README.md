@@ -1,24 +1,38 @@
-# README
+# Polaroll
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A mobile photo and camera app built as a tribute to the Polaroid Camera.
 
-Things you may want to cover:
+You can see a full demo of the app here: https://www.youtube.com/watch?v=ZfXLcVwfa4M&t=1s
 
-* Ruby version
+## How the app works
+* To run the app, first fork and clone down this repo to your local device.
 
-* System dependencies
+    * npm install to download dependencies
+    * npm start to start app
 
-* Configuration
+* Note: The backend is deployed to Heroku, however if you would like to look at the code you can find the frontend repo [here](https://github.com/ljg2gb/Polaroll)
 
-* Database creation
+* To view on your device open or download Expo Client from the App Store.
 
-* Database initialization
+* To view on a simulator on your Mac, open or download Xcode.
 
-* How to run the test suite
+* Run `npm start` to open Expo dev tools select how you would like to open the app.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Open the app on your device
+    * Take a photo and watch the animations
+    * Save the photo to your CameraRoll or the app itself.
 
-* Deployment instructions
+## Technologies
+* React Native + Expo 
+* Ruby on Rails
+* Postgres
+* Firebase Storage
 
-* ...
+## Next goals
+* Adding and saving filters to photos
+* Adding cropping and other photo adjustments
+* Test and deploy on Android devices
+
+## Authors
+* Lydia Gregory
+
