@@ -2,7 +2,8 @@
 
 A mobile photo and camera app built as a tribute to the Polaroid Camera.
 
-You can see a full demo of the app here: https://www.youtube.com/watch?v=ZfXLcVwfa4M&t=1s
+## Demo
+Watch me demo the app here: https://www.youtube.com/watch?v=ZfXLcVwfa4M&t=1s
 
 ## How the app works
 * To run the app, first fork and clone down this repo to your local device.
